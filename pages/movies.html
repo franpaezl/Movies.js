@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="../assets/Moviestack_favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>MOVIESTACK</title>
+</head>
+
+<body>
+    <div class="contenedor bg-black">
+        <header class=" flex flex-col justify-between items-center md:flex-row border-b border-[#D2CCFF]">
+            <div class="logos flex justify-center items-center">
+                <img src="../assets/Moviestack_isotipo.png" alt="icono" class="h-[120px] md:h-[150px]"></img>
+                <img src="../assets/Moviestack_logotipo2.png" alt="" class="h-[120px] md:h-[150px]"></img>
+            </div>
+            <nav class="flex justify-center md:pr-[80px]">
+                <a class="a text-[15px] text-[#FFFFFF] px-[30px] font-bold md:text-[20px] hover:border-white hover:border-2"
+                    href="../index.html">HOME</a>
+                <a class="a text-[15px] text-[#FFFFFF] px-[30px] font-bold md:text-[20px] hover:border-white hover:border-2"
+                    href="#" id="active">MOVIES</a>
+                <a class="a text-[15px] text-[#FFFFFF] px-[30px] font-bold md:text-[20px] hover:border-white hover:border-2"
+                    href="#">FAVS</a>
+            </nav>
+
+        </header>
+        <main>
+            <section
+                class="section flex flex-col justify-center items-center py-[10px] px-[10px] md:py-[100px] md:px-[100px]">
+                <h2 class=" bg-[#D2CCFF] text-center py-[20px] text-[20px] md:text-[50px] mt-[20px] w-[100%]">Movies
+                </h2>
+                <form action="" method="get" class="form flex flex-col md:flex-row py-[20px] gap-[10px]">
+                    <label class="text-white" for="genero">Select genre:</label>
+                    <select name="genero" id="genero" class="select-genero">
+
+                    </select>
+                </form>
+            </section>
+        </main>
+        <footer class="border-2 border-t-white flex items-center justify-center">
+            <p class="text-2xl text-white py-[20px]">MindHub - Cohort 55</p>
+        </footer>
+    </div>
+
+    <script src="../js/moviesData.js"></script>
+    <script src="../js/moviestack.js"></script>
+</body>
+
+</html>

@@ -1,4 +1,10 @@
-#active {
+#active{
     border: 2px solid white;
+}
+
+td,tr {
+    border: 2px solid white;
+    text-align: center;
+    padding: 10px 0;
     
 }
