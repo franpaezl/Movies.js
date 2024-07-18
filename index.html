@@ -1,23 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./Styles/style.css">
-    <link rel="icon" type="image/png" href="./assets/Moviestack_favicon.png" sizes="48x48">
-    <title>MovieStack</title>
-</head>
-<body>
-    <div class="contenedor">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="./assets/Moviestack_favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>MOVIESTACK</title>
+</head>
+
+<body>
+    <div class="contenedor bg-black">
+        <header class=" flex flex-col justify-between items-center md:flex-row border-b border-[#D2CCFF]">
+            <div class="logos flex justify-center items-center">
+                <img src="./assets/Moviestack_isotipo.png" alt="icono" class="h-[120px] md:h-[150px]"></img>
+                <img src="./assets/Moviestack_logotipo2.png" alt="" class="h-[120px] md:h-[150px]"></img>
+            </div>
+            <nav class="flex justify-center md:pr-[80px]">
+                <a class="a text-[15px] text-[#FFFFFF] px-[30px] font-bold md:text-[20px] hover:border-white hover:border-2"
+                    href="#" id="active">HOME</a>
+                <a class="a text-[15px] text-[#FFFFFF] px-[30px] font-bold md:text-[20px] hover:border-white hover:border-2"
+                    href="./pages/movies.html">MOVIES</a>
+                <a class="a text-[15px] text-[#FFFFFF] px-[30px] font-bold md:text-[20px] hover:border-white hover:border-2"
+                    href="./pages/favs.html">FAVS</a>
+            </nav>
+
+        </header>
+        <main class="flex flex-col py-[10px] px-[10px] md:py-[100px] md:px-[100px] items-center text-[#FFFFFF]">
+            <img class="w-screen h-80 object-cover" src="./assets/movie-trendy-banner-vector.jpg" alt="" />
+            <p class="pt-[20px]">
+                A movie website, named "CinePlus," offers users an immersive and easy-to-navigate experience. The
+                homepage features the latest releases with high-resolution images and video trailers. An intuitive
+                navigation bar allows users to explore different genres such as action, comedy, drama, and science
+                fiction. Each movie has a dedicated page with details like synopsis, cast, director, and duration. Users
+                can read and leave reviews, as well as view the average rating. CinePlus also offers personalized
+                recommendations based on the user's viewing history. An advanced search function allows finding movies
+                by title, actor, or director. The site is fully responsive, ensuring an optimal experience on both
+                mobile devices and desktops. CinePlus integrates options for creating favorite lists and receiving
+                notifications about upcoming releases. Additionally, the website includes a blog with news and articles
+                about the world of cinema, keeping users informed about the latest events and trends in the film
+                industry.
+            </p>
+            <div class="my-[50px] gap-[20px] flex flex-col w-[100%] md:flex-row">
+                <div
+                    class="w-[100%] md:w-[50%] h-[300px] bg-[#D2CCFF] flex flex-col justify-center items-center text-[#000000] text-[30px]">
+                    <p class="font-bold">MORE THAN MOVIES</p>
+                    <a class="border-solid border-2 text-xl border-white mt-1 rounded-lg p-2 bg-violet-300 hover:bg-violet-700"
+                        href="./pages/movies.html">CLICK VIEW MORE</a>
+                </div>
+                <div
+                    class="w-[100%] md:w-[50%] h-[300px] bg-[#D2CCFF] flex flex-col justify-center items-center text-[#000000] text-[30px]">
+                    <P class="font-bold">MORE THAN FAVS</P>
+                    <a class="border-solid border-2 text-xl border-white mt-1 rounded-lg p-2 bg-violet-300 hover:bg-violet-700"
+                        href="#">CLICK VIEW MORE</a>
+                </div>
+            </div>
+        </main>
+        <footer class="border-2 border-t-white flex items-center justify-center ">
+            <p class="text-2xl text-white py-[20px]">MindHub - Cohort 55</p>
+        </footer>
     </div>
 
-    <script src="./Sctipts/data.js"></script>
-    <script src="./Sctipts/index.js"></script>
 </body>
+
 </html>
-
-
-
-
